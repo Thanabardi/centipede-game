@@ -21,6 +21,10 @@ A recreation of the classic *Centipede* arcade game originally published by Atar
   - When hitting a *mushroom* or grid edge, it will move down one cell and reverses direction.
   - When blocked, the centipede will ignore obstacles like *mushrooms* or its own segments and continue moving.
 
+- Mushroom:
+  - *Mushroom* initially has 3 life points
+  - It blocks the movement of all movable entities.
+
 - Spider:
   - Actively chases the player while avoids *mushrooms* using *A\* pathfinding*.
 
@@ -29,6 +33,11 @@ A recreation of the classic *Centipede* arcade game originally published by Atar
   - Player can shoot bullet to destroy *mushrooms*, *centipedes*, and the *spider*.
   - Destroying a *centipede* segment causes it to split and leave a mushroom behind.
   - When player losing a life, all enemies will reset to their initial state.
+
+- Score:
+  - Destroying a *mushroom* awards 1 point.
+  - Destroying a *centipede* awards 100 points.
+  - Destroying a *spider* awards 500 points.
 
 - Game Over Conditions:
   - Game Over can happen when either All *centipede* segments are destroyed or player loses all lives.
